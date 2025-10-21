@@ -11,3 +11,11 @@ jobs:
     steps:
       - name: Print a welcome message
         run: echo "welcome"
+
+      - name: Checkout
+        uses: actions/checkout@v5.0.0
+      - name: Print working directory
+        run: pwd
+      - name: List all files
+        run: ls-la
+        
